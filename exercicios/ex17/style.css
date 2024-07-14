@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    /* Medidas abosolutas
+    cm, mm, in (polegada), px, pt, pc
+
+    Medidas Relativas
+    em (medida relativa ao tamanho atual da fonte), ex (relativa a altura x da fonte), rem (fonte confugurada no body), vw (tamanho da tela), vh, %
+    16px geralmente = 1em 
+    
+    */
+}
+h1 {
+    
+    /*Shorthand font
+
+    - font-style -> font-weight -> font-size -> font-family
+
+    font-family: "Work Sans", sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+
+    */
+    font: italic bolder 3em 'Work Sans', sans-serif;
+
+}
+h2 {
+    font: bold 2em 'Work Sans';
+}
