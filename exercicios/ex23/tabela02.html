@@ -16,6 +16,12 @@
             border: 1px solid black;
             padding: 10px;
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -28,7 +34,8 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--
-    ANATOMIA ARA TABEAS GRANDES
+    ANATOMIA ARA TABELAS GRANDES
+    CAPTION = Especifica a legenda (ou título) de uma tabela.
     TABLE
         THEAD
             TR, TD, TH
@@ -38,9 +45,10 @@
             TR, TD, TH
     -->
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 50px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -151,7 +159,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212.583.750</strong></td>
             </tr>
         </tfoot>
